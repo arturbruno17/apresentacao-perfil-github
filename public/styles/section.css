@@ -1,0 +1,12 @@
+section {
+  padding: 20px;
+}
+
+section h2 {
+  font-family: sans-serif;
+  margin-bottom: 20px;
+}
+
+section ul li {
+  margin-bottom: 20px;
+}

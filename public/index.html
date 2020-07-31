@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User GitHub</title>
+
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="styles/bootstrap/bootstrap.min.css">
+
+    <!-- Reset css-->
+    <link rel="stylesheet" href="styles/reset.css">
+
+    <!-- Normalize css -->
+    <link rel="stylesheet" href="styles/normalize.css">
+
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/aside.css">
+    <link rel="stylesheet" href="styles/section.css">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/34693b370b.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <header class="d-flex align-items-center justify-content-center mb-4">
+        <form class="d-flex align-items-center justify-content-center">
+            <input type="text" placeholder="Digite o nome de usuário" id="username">
+            <button type="button" class="btn btn-light" id="button-submit">
+                <i class="fas fa-search"></i>
+            </button>
+        </form>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <div class="d-flex col-md-4 col-sm-12 border-line">
+                <aside>
+                    <img alt="Avatar do usuário" id="img-user">
+                    <p class="d-block" id="bio"></p>
+                    <span class="d-block" id="followers"></span>
+                </aside>
+            </div>
+            <div class="col-md-8 col-sm-12">
+                <section>
+                    <h2>Lista de repositórios</h2>
+                    <ul id="repo-list">
+                        
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="notFoundUser" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header text-danger">
+                    <h5 class="modal-title" id="exampleModalLabel">Usuário não encontrado</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Insira um nome de usuário válido
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="withoutRepository" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header text-danger">
+                    <h5 class="modal-title" id="exampleModalLabel">Usuário sem repositório</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    O nome de usuário inserido não possui nenhum repositório público
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="scripts/bootstrap/bootstrap.min.js"></script>
+
+    <script src="scripts/bundle.js"></script>
+
+</body>
+
+</html>

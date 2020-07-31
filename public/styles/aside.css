@@ -1,0 +1,65 @@
+.border-line {
+  border-right: 1px solid #E5E5E5;
+}
+
+@media (max-width: 767.99px) {
+  .border-line {
+    border: none;
+  }
+}
+
+aside {
+  width: 100%;
+  position: relative;
+  height: calc(100vh - 70px);
+}
+
+aside img {
+  display: none;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  align-self: start;
+  justify-self: center;
+  width: 80%;
+  border-radius: 50%;
+  padding: 5px;
+  border: 5px solid #24292E;
+}
+
+aside p {
+  position: absolute;
+  width: 80%;
+  top: 62%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+  font-family: sans-serif;
+  text-align: center;
+  color: #24292E;
+}
+
+aside span {
+  position: absolute;
+  width: 80%;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 16px;
+  font-family: sans-serif;
+  text-align: center;
+  color: #24292E;
+}
+
+@media (max-width: 991.99px) {
+  aside span {
+    top: 80%;
+  }
+}
+
+@media (max-width: 767.98px) {
+  aside img {
+    width: 50%;
+  }
+}
