@@ -1,0 +1,23 @@
+{
+  "name": "perfil-github",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "webpack -w"
+  },
+  "author": "arturbruno17",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.10.5",
+    "@babel/core": "^7.11.0",
+    "@babel/polyfill": "^7.10.4",
+    "@babel/preset-env": "^7.10.4",
+    "babel-loader": "^8.1.0",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  },
+  "dependencies": {
+    "@babel/plugin-transform-async-to-generator": "^7.10.4",
+    "axios": "^0.19.2"
+  }
+}
