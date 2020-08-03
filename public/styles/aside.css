@@ -11,17 +11,16 @@
 aside {
   width: 100%;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: calc(100vh - 70px);
+  flex-direction: column;
 }
 
 aside img {
   display: none;
-  position: absolute;
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  align-self: start;
-  justify-self: center;
+  margin-bottom: 25px;
   width: 80%;
   border-radius: 50%;
   padding: 5px;
@@ -29,11 +28,8 @@ aside img {
 }
 
 aside p {
-  position: absolute;
-  width: 80%;
-  top: 62%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  display: block;
+  width: 100%;
   font-size: 18px;
   font-family: sans-serif;
   text-align: center;
@@ -41,25 +37,15 @@ aside p {
 }
 
 aside span {
-  position: absolute;
   width: 80%;
-  top: 80%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   font-size: 16px;
   font-family: sans-serif;
   text-align: center;
   color: #24292E;
 }
 
-@media (max-width: 991.99px) {
-  aside span {
-    top: 80%;
-  }
-}
-
-@media (max-width: 767.98px) {
+@media (max-width: 575.99px) {
   aside img {
-    width: 50%;
+    width: 70%;
   }
 }
